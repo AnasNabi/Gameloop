@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GameLoop</title>
+    <link rel="icon" href="image/R.png" type="image/icon type">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- slider Style -->
+    <link rel="stylesheet" href="test.css"> 
+</head>
+<body>
+    <!-- PRELOADER START -->
+    <div class="loader-wrapper">
+        <div class='cssload-loader'>
+            <div class='cssload-inner cssload-one'></div>
+            <div class='cssload-inner cssload-two'></div>
+            <div class='cssload-inner cssload-three'></div>
+        </div>
+    </div>
+    <!-- PRELOADER END -->
+    <!-- HEADER START -->
+    <div class="header-line-wrapper">
+        <header class="header-wrapper fixed-top plr100">
+            <div class="table height-100p">
+                <div class="table-row">
+                    <div class="table-cell valign-middle text-left">
+                        <a href="index.html" class="logo"> 
+                            <img src="image/logo.png" alt="" class="img-responsive inline-block">
+                        </a>
+                    </div>
+                    <div class="table-cell valign-top text-center vm-sm">
+                        <div class="main-menu">
+                            <span class="toggle_menu">
+                                <span></span>
+                            </span>
+                            <ul class="menu clearfix">
+                                <li class="inline-block active">
+                                    <a href="index.html">
+                                        Homepage
+                                    </a>
+                                </li>
+                          
+                                <li class="inline-block">
+                                    <a href="about.html">
+                                       About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- HEADER END -->
+    <!--slider start -->
+    <div class="img-slider">
+        <div class="slide active">
+          <img src="image/BNRR1.jpg" alt="">
+         
+        </div>
+        <div class="slide">
+          <img src="image/bNRR2.jpg" alt="">
+        
+        </div>
+        <div class="slide">
+          <img src="image/BNRR3.jpg" alt="">
+          
+        </div>
+       
+        </div>
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        let currentSlide = 1;
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+            slides[i].classList.add('active');
+           
+            i++;
+    
+            if(slides.length == i){
+              i = 0;
+            }
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 4000 );
+          }
+          repeater();
+        }
+        repeat();
+        </script>
+        <!--slider end-->  
+ <!-- coming soon SECTION START-->
+    <section class="blog-section ptb90">
+        <div class="container" style="margin-top: 350px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-bl text-center wow fadeIn" data-wow-duration="2s">
+                        <div class="title color-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                           UPCOMING GAMES
+                        </div>
+                        <div class="subtitle" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                          COMING SOON
+                        </div>
+                    </div>
+                    <div class="title-description mt30 fweight-300 text-center">
+                      A SELLECTION OF THE BEST WEBSITE GAMES JUST FOR YOU
+                        <br/>  ALL NEW GAMES ARE ONLY IN GAMELOOP
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-wrapper each-element mt90 clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="item col-lg-4 col-md-4 col-sm-12 col-sx-12">
+                      
+                            <div class="image">
+                                <img src="image/fla.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="item-info equal-height">
+                                <div class="item-header table fsize-14 fweight-700 uppercase">
+                                    <div class="table-cell platform">coming soon</div>
+                                    <div class="table-cell color-2 text-right">april 29, 2022</div>
+                                </div>
+                                <div class="item-title mt20" data-trim="40" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Flappy Bird</div>
+                                <div class="item-text mt25 lheight-26" data-trim="130">
+                                    Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. 
+                        
+                                </div>
+                            </div>
+                            
+                           
+                        </a>
+                    </div>
+                    <div class="item col-lg-4 col-md-4 col-sm-12 col-sx-12">
+                     
+                            <div class="image">
+                                <img src="image/un.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="item-info equal-height">
+                                <div class="item-header table fsize-14 fweight-700 uppercase">
+                                    <div class="table-cell platform">coming soon</div>
+                                    <div class="table-cell color-2 text-right">mar 18, 2022</div>
+                                </div>
+                                <div class="item-title mt20" data-trim="40" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">UnderRun</div>
+                                <div class="item-text mt25 lheight-26" data-trim="130">
+                                    A shooter game where you run in a destroyed lab and your goal is to kill the spider-looking enemies and find the terminals.
+
+
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </div>
+                    <div class="item col-lg-4 col-md-4 col-sm-12 col-sx-12">
+                      
+                            <div class="image">
+                                <img src="image/sys.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="item-info equal-height">
+                                <div class="item-header table fsize-14 fweight-700 uppercase">
+                                    <div class="table-cell platform">coming soon</div>
+                                    <div class="table-cell color-2 text-right">july 23, 2022</div>
+                                </div>
+                                <div class="item-title mt20" data-trim="40" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">System offline</div>
+                                <div class="item-text mt25 lheight-26" data-trim="130">
+                                    Awesome puzzle game in which you are stuck on a broken space station. Your mission is to fix the systems.
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- coming soon SECTION END -->
+
+<!--game section start -->
+    <section class="game-section pt150 pb85">
+        <div class="container" styel="padding:0px;">
+            <div class="row">
+                <div class="title-bl text-center wow fadeIn" data-wow-duration="2s">
+                    <div class="title color-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                        GAMES-Section
+                    </div>
+          <div class="subtitle" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        GameLoop
+                    </div>
+                </div>
+                <div class="tm-tabs tabs mt70">
+                      <div>
+                          <ul class="list-inline nav nav-tabs tabs-slider">
+                            <li class=" col-lg-3 col-md-3">
+                                <a href="snake.html" >
+                                    <div class="img-wrap">
+                                        <img src="image/snake.jpg" alt="">
+                                    </div>
+                                    <div class="nav-header-bl mt25">
+                                        <div class="nav-title color-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                            SNAKE Mania
+                                        </div>
+                                
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-lg-3 col-md-3">
+                                <a href="Tic_Tac_Toe.html" >
+                                    <div class="img-wrap">
+                                        <img src="image/tic.jpg" alt="">
+                                    </div>
+                                    <div class="nav-header-bl mt25">
+                                        <div class="nav-title color-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                           TIC TAC TOE
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-lg-3 col-md-3">
+                                <a href="Mario.html" >
+                                    <div class="img-wrap">
+                                        <img src="image/maro.jpg" alt="">
+                                    </div>
+                                    <div class="nav-header-bl mt25">
+                                        <div class="nav-title color-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                           MARIO
+                                        </div>
+                                       
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-lg-3 col-md-3">
+                                <a href= "Hcd.html" >
+                                    <div class="img-wrap">
+                                      <img src="image/game-img-2(1).png" alt=""> 
+                                    </div>
+                                    <div class="nav-header-bl mt25">
+                                        <div class="nav-title color-white" style=" font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                          SPS
+                                        </div>
+                                       
+                                    </div>
+                                </a>
+                            </li>
+                           
+                          </ul>
+
+                          <ul class="list-inline nav nav-tabs tabs-slider">
+                            <li class="col-lg-3 col-md-3">
+                                <a href="404.html">
+                                    <div class="img-wrap">
+                                        <img src="image/game-img-4.jpg" alt="">
+                                    </div>
+                                    <div class="nav-header-bl mt25">
+                                        <div class="nav-title color-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                            DEMO
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-lg-3 col-md-3">
+                                <a href="404.html">
+                                    <div class="img-wrap">
+                                        <img src="image/game-img-4.jpg" alt="">
+                                    </div>
+                                    <div class="nav-header-bl mt25">
+                                        <div class="nav-title color-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                            DEMO
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-lg-3 col-md-3">
+                                <a href="404.html">
+                                    <div class="img-wrap">
+                                        <img src="image/game-img-4.jpg" alt="">
+                                    </div>
+                                    <div class="nav-header-bl mt25">
+                                        <div class="nav-title color-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                            DEMO
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-lg-3 col-md-3">
+                                <a href="404.html">
+                                    <div class="img-wrap">
+                                        <img src="image/game-img-4.jpg" alt="">
+                                    </div>
+                                    <div class="nav-header-bl mt25">
+                                        <div class="nav-title color-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                            DEMO
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                          </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GAME SECTION END -->
+    <!-- FOOTER START -->
+    <footer class="footer">
+      
+        <div class="container">
+            <div class="row mb110">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <a href="index.html">
+                        <img src="image/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-right">
+                    <ul class="footer-menu">
+                        <li class="active">
+                            <a href="index.html">
+                                Homepage
+                            </a>
+                        </li>
+                       
+                        <li>
+                            <a href="about.html">
+                                About Us                          </a>
+                        </li>
+                    </ul>
+                    <div class="mt60">
+                     
+                       Welcome to Gameloop. We give you best web gaming experience.For Any feedback contact us via our social media.             </div>
+                       <div class="social-content mt30" style="font-size: 5px;" >
+                        <div class="social-list">
+                            <a href="https://www.instagram.com/">
+                                <i ><img src="image/insta.ico"></i>
+                            </a>
+                        </div>
+                        <div class="social-list">
+                            <a href="https://www.facebook.com/">
+                                <i ><img src="image/facebook.ico"></i>
+                            </a>
+                        </div>
+                        <div class="social-list">
+                            <a href="https://twitter.com/">
+                                <i ><img src="image/tweet.ico"></i>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+               
+
+            </div>
+            <div class="row">
+                <div class="copyright ptb30 col-lg-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        © Copyright 2022
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
+                        All Rights Reserved
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <a href="#" id="toTop" class="color-white">
+       <i><img src="image/favicon.ico"></i>
+	</a>
+    <!-- Scripts -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="flexmenu.min.js"></script>
+    <script src="jquery.matchHeight.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="wow.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
